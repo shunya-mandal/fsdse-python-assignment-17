@@ -7,7 +7,7 @@ def solution_asc(dic):
 
     Returns tuple of sorted (value, key)
     """
-    return sorted(dic.items(), key=operator.itemgetter(0))
+    return sorted(dic.iteritems(), key=operator.itemgetter(0))
 
 
 def solution_desc(dic):
@@ -16,7 +16,7 @@ def solution_desc(dic):
 
     Returns tuple of sorted (value, key)
     """
-    return sorted(dic.items(), key=operator.itemgetter(0), reverse=True)
+    return sorted(dic.iteritems(), key=operator.itemgetter(0), reverse=True)
 
 
 d = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
